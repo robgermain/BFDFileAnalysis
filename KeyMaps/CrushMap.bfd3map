@@ -35,7 +35,11 @@
     <VObjectArray name="midi_note_33"/>
     <VObjectArray name="midi_note_34"/>
     <VObjectArray name="midi_note_35"/>
-    <VObjectArray name="midi_note_36"/>
+    <VObjectArray name="midi_note_36">
+        <MIDIMapElement note="36" isgrv="false" minCC="0" maxCC="1" curve="0" minInCC="0" maxInCC="1" inGate="false">
+            <RequestedArticulationID name="req_artic" slot="10" artic="0"/>
+        </MIDIMapElement>
+    </VObjectArray>
     <VObjectArray name="midi_note_37"/>
     <VObjectArray name="midi_note_38"/>
     <VObjectArray name="midi_note_39"/>
