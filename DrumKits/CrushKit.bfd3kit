@@ -118,7 +118,7 @@
                 <BFD3SwellModel name="swell" energyHalfLife="0.9" energyTransfer="0.19" impactSmudgeTime="0.19" active="false" amount="0.7" presetName="Default" bowAmount="0"/>
             </BFD2KitPieceModel>
         </BFD2KitPiece>
-        <BFD2KitPiece name="kp_slot_11" pan="0.5" trim="0.8" dampAmt="0" dampFreq="500" dampRatio="1" tune="0.5" dyn="0.5" loudnessCurve="0.8" loudnessNorm="false" loudnessDynRange="0.5" flip_amb="false" kick_bl_lvl="1" snre_bl_lvl="1" kick_bl_dst="2" snre_bl_dst="2" bleed_send="1" bleed_return="1" amb_master_gain="0.8" amb_master_gain_link="false" mute="false" solo="false" micBlend="0.5" isVisible="false" guiFocusedArtic="-1" chokeGroup="11">
+        <BFD2KitPiece name="kp_slot_11" pan="0.5" trim="0.8" dampAmt="0" dampFreq="500" dampRatio="1" tune="0.5" dyn="0.5" loudnessCurve="0.8" loudnessNorm="false" loudnessDynRange="0.5" flip_amb="false" kick_bl_lvl="1" snre_bl_lvl="1" kick_bl_dst="2" snre_bl_dst="2" bleed_send="1" bleed_return="1" amb_master_gain="0.8" amb_master_gain_link="false" mute="false" solo="false" micBlend="0.5" isVisible="true" guiFocusedArtic="-1" chokeGroup="11">
             <VObjectArray name="ambSends">
                 <BFD2KitPieceAmbSend gain="0.8" active="true" destChan="OH"/>
                 <BFD2KitPieceAmbSend gain="0.8" active="true" destChan="Room"/>
