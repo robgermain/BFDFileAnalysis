@@ -3,6 +3,7 @@
         <VString name="kit_text" string=""/>
         <VString name="kit_user_text" string=""/>
         <VString name="kit_slot_10">Crush Drums\Kick</VString>
+        <VString name="kit_slot_11">Crush Drums\Snare Hammered Dampened High</VString>
     </BFD2KitInfo>
     <BFD2Kit name="kit_meta_info" SourceEngine="BFD3" masterDynamics="0.5">
         <BFD2KitPiece name="kp_slot_0" pan="0.5" trim="0.8" dampAmt="0" dampFreq="500" dampRatio="1" tune="0.5" dyn="0.5" loudnessCurve="0.8" loudnessNorm="false" loudnessDynRange="0.5" flip_amb="false" kick_bl_lvl="1" snre_bl_lvl="1" kick_bl_dst="2" snre_bl_dst="2" bleed_send="1" bleed_return="1" amb_master_gain="0.8" amb_master_gain_link="false" mute="false" solo="false" micBlend="0.5" isVisible="true" guiFocusedArtic="-1" chokeGroup="0">
@@ -118,11 +119,19 @@
                 <BFD3SwellModel name="swell" energyHalfLife="0.9" energyTransfer="0.19" impactSmudgeTime="0.19" active="false" amount="0.7" presetName="Default" bowAmount="0"/>
             </BFD2KitPieceModel>
         </BFD2KitPiece>
-        <BFD2KitPiece name="kp_slot_11" pan="0.5" trim="0.8" dampAmt="0" dampFreq="500" dampRatio="1" tune="0.5" dyn="0.5" loudnessCurve="0.8" loudnessNorm="false" loudnessDynRange="0.5" flip_amb="false" kick_bl_lvl="1" snre_bl_lvl="1" kick_bl_dst="2" snre_bl_dst="2" bleed_send="1" bleed_return="1" amb_master_gain="0.8" amb_master_gain_link="false" mute="false" solo="false" micBlend="0.5" isVisible="true" guiFocusedArtic="-1" chokeGroup="11">
+        <BFD2KitPiece name="kp_slot_11" pan="0.5" trim="0.8" dampAmt="0" dampFreq="500" dampRatio="1" tune="0.5" dyn="0.5" loudnessCurve="0" loudnessNorm="false" loudnessDynRange="0.5" flip_amb="false" kick_bl_lvl="1" snre_bl_lvl="1" kick_bl_dst="2" snre_bl_dst="2" bleed_send="1" bleed_return="1" amb_master_gain="0.8" amb_master_gain_link="false" mute="false" solo="false" micBlend="0.5" isVisible="true" guiFocusedArtic="-1" chokeGroup="11">
+            <BFD2Artic name="artic_0_Hit" v2d="0.5" v2p="0.5" aTrim="0.5" artic_name="Hit" artic_load_state="false" AMGVarDepth="1"/>
+            <BFD2Artic name="artic_1_Drag" v2d="0.5" v2p="0.5" aTrim="0.5" artic_name="Drag" artic_load_state="false" AMGVarDepth="1"/>
+            <BFD2Artic name="artic_3_Rim" v2d="0.5" v2p="0.5" aTrim="0.5" artic_name="Rim" artic_load_state="false" AMGVarDepth="1"/>
+            <BFD2Artic name="artic_4_SS" v2d="0.5" v2p="0.5" aTrim="0.5" artic_name="SS" artic_load_state="false" AMGVarDepth="1"/>
+            <BFD2Artic name="artic_5_HalfEdge" v2d="0.5" v2p="0.5" aTrim="0.5" artic_name="HalfEdge" artic_load_state="false" AMGVarDepth="1"/>
+            <BFD2Artic name="artic_7_Rim Click" v2d="0.5" v2p="0.5" aTrim="0.5" artic_name="Rim Click" artic_load_state="false" AMGVarDepth="1"/>
             <VObjectArray name="ambSends">
-                <BFD2KitPieceAmbSend gain="0.8" active="true" destChan="OH"/>
-                <BFD2KitPieceAmbSend gain="0.8" active="true" destChan="Room"/>
-                <BFD2KitPieceAmbSend gain="0.8" active="true" destChan="Amb3"/>
+                <BFD2KitPieceAmbSend gain="0.8" active="true" sourceMic="OH" destChan="OH"/>
+                <BFD2KitPieceAmbSend gain="0.8" active="true" sourceMic="Amb3" destChan="Amb3"/>
+                <BFD2KitPieceAmbSend gain="0.8" active="true" sourceMic="Room" destChan="Room"/>
+                <BFD2KitPieceAmbSend gain="0.8" active="true" sourceMic="Tile" destChan="Tile"/>
+                <BFD2KitPieceAmbSend gain="0.8" active="true" sourceMic="Mono Kit" destChan="Mono Kit"/>
             </VObjectArray>
             <BFD2KitPieceModel name="model" chokeFade_active="false" chokeFade_base="1" chokeFade_range="1" hihatTighten_damp="0" hihatTighten_pitch="0" tomRes_active="false" resTrim="0.5" spillTrim="0.5">
                 <BFD3SwellModel name="swell" energyHalfLife="0.9" energyTransfer="0.19" impactSmudgeTime="0.19" active="false" amount="0.7" presetName="Default" bowAmount="0"/>
