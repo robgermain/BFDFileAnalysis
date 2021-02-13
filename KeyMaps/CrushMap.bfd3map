@@ -52,7 +52,11 @@
             <RequestedArticulationID name="req_artic" slot="11" artic="0"/>
         </MIDIMapElement>
     </VObjectArray>
-    <VObjectArray name="midi_note_41"/>
+    <VObjectArray name="midi_note_41">
+        <MIDIMapElement note="41" isgrv="false" minCC="0" maxCC="1" curve="0" minInCC="0" maxInCC="1" inGate="false">
+            <RequestedArticulationID name="req_artic" slot="11" artic="3"/>
+        </MIDIMapElement>
+    </VObjectArray>
     <VObjectArray name="midi_note_42"/>
     <VObjectArray name="midi_note_43"/>
     <VObjectArray name="midi_note_44"/>
